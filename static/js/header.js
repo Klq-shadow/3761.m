@@ -10,3 +10,17 @@ var header = `<div class="headwrap">
   <li class=""><a href="news.html">资讯攻略</a></li>
 </ul>
 </div>`;
+//@牛超 底下这段js代码可以删除
+document.addEventListener("DOMContentLoaded", function () {
+  var currentUrl = window.location.href;
+
+  var navItems = document.querySelectorAll(".navwrap li a");
+
+  navItems.forEach(function (item) {
+    if (item.href === currentUrl) {
+      item.parentElement.classList.add("on");
+    } else {
+      item.parentElement.classList.remove("on");
+    }
+  });
+});

@@ -338,6 +338,10 @@ html {
     margin: 0 6px;
 }
 
+.navwrap ul li.on a {
+    color: #000;
+}
+
 .navwrap ul li a {
     display: block;
     text-align: center;
