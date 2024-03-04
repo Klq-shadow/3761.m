@@ -1,5 +1,6 @@
 var header = `<div class="headwrap">
-<a href="/" class="home"><img src="static/images/logo2@2x.png" alt="logo" /></a>
+<a href="/" class="home"><img src="static/images/logo@2x.png" alt="logo" /></a>
+<span  class="home_r"><img/ src="static/images/icon @2x.png"></span>
 </div>
 <div class="navwrap">
 <ul>

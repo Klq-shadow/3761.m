@@ -282,11 +282,15 @@ html {
 .headwrap {
     height: 40px;
     line-height: 40px;
-    background: #333;
-    padding: 0 12px;
+    background-image: linear-gradient(to right, #ff4d4c, #ff884d);
+    padding: 0 0 0 12px;
+    display: flex;
+    justify-content: space-between;
 }
 
+
 .headwrap .home {
+    display: inline-block;
     font-size: 14px;
     font-weight: bold;
     color: #fff;
@@ -299,6 +303,11 @@ html {
     display: block;
     float: left;
     /* margin-top: 10px; */
+}
+
+
+.headwrap .home_r img {
+    height: 100%;
 }
 
 .headwrap .menu {
@@ -318,8 +327,8 @@ html {
 
 .navwrap {
     height: 45px;
-    background-image: -webkit-gradient(linear, left top, right top, from(#ff4d4c), to(#ff884d));
-    background-image: linear-gradient(to right, #ff4d4c, #ff884d);
+    /* background-image: -webkit-gradient(linear, left top, right top, from(#ff4d4c), to(#ff884d)); */
+    background-color: #fff;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
@@ -339,16 +348,19 @@ html {
 }
 
 .navwrap ul li.on a {
-    color: #000;
+    background-image: linear-gradient(125deg, #ff4d4c, #ff884d);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .navwrap ul li a {
     display: block;
     text-align: center;
     line-height: 45px;
-    font-size: 16px;
-    color: #fff;
+    font-size: 15px;
+    color: #333;
     font-weight: bold;
+    transition: color 0.2s linear;
 }
 
 .footer {
